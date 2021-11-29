@@ -8,7 +8,3 @@
 
 ### ①. master分支，基于react的PC项目基础框架
 
-### ②. dev-mobile-fix2rem分支，基于fix2rem、antd-mobile自适应移动端布局
-
-### ③. dev-mobile-rem分支，基于rem、antd-mobile自适应移动端布局
-
