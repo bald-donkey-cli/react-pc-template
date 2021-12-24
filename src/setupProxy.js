@@ -8,7 +8,7 @@ module.exports = function (app) {
       target: CONFIG.BASE_URL,// 目标服务器
       changeOrigin: true, // 控制服务器收到的响应头中host字段的值
       pathRewrite: {
-        "^/api": "/" // 重写请求路径
+        "^/api": "" // 重写请求路径
       }
     }));
   app.use(
@@ -17,7 +17,7 @@ module.exports = function (app) {
       target: 'http://ng.aegis-info.com:8500/', // 另一个目标服务器
       changeOrigin: true,
       pathRewrite: {
-        "^/auth": "/"
+        "^/auth": ""
       }
     }
     ));

@@ -1,9 +1,8 @@
 import axios from 'axios';
 
-import { BASE_URL, TIMEOUT } from './config';
+import { TIMEOUT } from './config';
 
 const instance = axios.create({
-  baseURL: BASE_URL,
   timeout: TIMEOUT
 })
 
@@ -16,7 +15,7 @@ instance.interceptors.request.use(config => {
 })
 
 instance.interceptors.response.use(res => {
-
+  console.log('响应拦截');
   return res.data
 }, error => {
   return error;

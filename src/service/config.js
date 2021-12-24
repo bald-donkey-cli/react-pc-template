@@ -1,5 +1,5 @@
-const devBaseURL = 'http://chst.vip:8081/'; // 测试环境后端地址
-const proBaseURL = 'http://chst.vip:8081/'; // 正式环境后端地址
+const devBaseURL = 'http://chst.vip:8081/api'; // 测试环境后端地址
+const proBaseURL = 'http://chst.vip:8081/api'; // 正式环境后端地址
 
 const BASE_URL = process.env.REACT_APP_BUILD_ENV === 'development' ? devBaseURL : proBaseURL;
 console.log("---", process.env.REACT_APP_BUILD_ENV);
