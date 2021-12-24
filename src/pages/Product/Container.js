@@ -22,7 +22,11 @@ class Container extends React.Component {
   }
 
   componentDidMount () {
-    this.props.getProductData();
+    try {
+      this.props.getProductData();
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   render () {
